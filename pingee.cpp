@@ -120,14 +120,14 @@ int main(int argc, char* argv[]) {
             std::cerr << "Unknown option: " << arg << std::endl;
             return 1;
         } else {
-            if (arg.find('.') != std::string::npos) {
-                addresses.push_back(arg);
-            } else {
-                std::ifstream infile(arg);
+            std::ifstream infile(arg);
+            if (infile.is_open()) {
                 std::string line;
                 while (std::getline(infile, line)) {
                     addresses.push_back(line);
                 }
+            } else {
+                addresses.push_back(arg);
             }
         }
     }
