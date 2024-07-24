@@ -1,6 +1,8 @@
-# pingee
+# pingee 🌟
 
 Pingee is a fast program that checks the availability of ip addresses and their response times.
+
+[![](https://github-readme-stats.vercel.app/api/pin/?username=shadowvvf&repo=pingee&theme=blue-green)](https://github.com/anuraghazra/github-readme-stats)
 
 ## Features
 
